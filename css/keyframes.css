@@ -1,0 +1,38 @@
+@keyframes rotateGlass {
+  40%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50%,
+  90% {
+    transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes dropsand {
+  25%,
+  50% {
+    bottom: 0;
+    top: 50%;
+  }
+  0%,
+  75% {
+    top: 0;
+    bottom: 50%;
+  }
+}
+
+@keyframes shake {
+  0% {
+    margin-left: 0rem;
+  }
+  25% {
+    margin-left: 0.5rem;
+  }
+  75% {
+    margin-left: -0.5rem;
+  }
+  100% {
+    margin-left: 0rem;
+  }
+}

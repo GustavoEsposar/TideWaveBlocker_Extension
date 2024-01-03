@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+  "name": "TideWave Blocker",
+  "version": "1.0",
+  "description": "TideWave Blocker oferece um sistema de combate ao phishing, identificando links maliciosos alertando você enquanto navaga na web!",
+  "permissions": ["webRequest", "webNavigation", "activeTab"],
+  "icons": {
+    "128": "fig/icons/icon128.png",
+    "48": "fig/icons/icon48.png",
+    "16": "fig/icons/icon16.png"
+  },
+  "browser_action": {
+    "default_icon": "fig/logo-favicon.png",
+    "default_popup": "popup.html",
+    "default_title": "Clique para abrir TideWave Blocker"
+  }
+}

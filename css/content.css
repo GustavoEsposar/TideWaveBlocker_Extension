@@ -1,0 +1,133 @@
+.content {
+    margin: 25px 0;
+}
+
+.content .input-container>div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .input-container .ilink {
+    color: black;
+    border-style: none;
+    background-color: var(--white-contrast);
+    width: 70%;
+    padding: 10px 35px 10px 10px;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: all 250ms;
+    outline: none;
+    box-shadow: 0 0 10px var(--blue-primary);
+}
+
+.content .input-container .ilink:hover {
+    box-shadow: 0 0 20px var(--blue-primary);
+}
+
+.content .input-container .material-symbols-outlined {
+    margin-left: -35px;
+    cursor: pointer;
+}
+
+.center {
+    display: flex;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hourglass {
+    height: 200px;
+    width: 99px;
+    border-bottom: 10px solid #5b4c34;
+    border-top: 10px solid #5b4c34;
+    position: relative;
+    overflow: hidden;
+    background: #7de3f5;
+    animation: rotateGlass 6s infinite linear;
+}
+
+.hourglass::after {
+    content: '';
+    border: 100px solid transparent;
+    border-left: 50px solid white;
+    border-right: 50px solid white;
+    position: absolute;
+    bottom: 0;
+}
+
+.sand::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #f0ca7d;
+    animation: dropsand 6s infinite linear;
+    -webkit-animation: dropsand 6s infinite linear;
+}
+
+.sand::after {
+    content: '';
+    position: absolute;
+    border-right: 50px solid transparent;
+    border-top: 400px solid rgba(255, 255, 255, 0.4);
+}
+
+.content .analysis .response {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.content .analysis .response .secure,
+.content .analysis .response .insecure {
+    font-size: 30px;
+}
+
+.check {
+    height: 300px;
+}
+
+.danger2 {
+    height: 100px;
+}
+
+.content .analysis .list-section {
+    background-color: var(--gray-contrast);
+    padding: 10px 35px;
+    margin: 0 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+    border: 0;
+    font-size: 25px;
+    height: 220px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.content .analysis .list-section .list {
+    text-align: start;
+    list-style-type: decimal;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.content .analysis .list-section .list li {
+    text-decoration: underline;
+    white-space: nowrap; /* Impede que o texto quebre para uma nova linha */
+    text-overflow: ellipsis; /* Adiciona reticências (...) para indicar que há mais texto */
+    max-width: 100%;     
+}

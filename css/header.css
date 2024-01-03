@@ -1,0 +1,30 @@
+a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 15px;
+    background-color: var(--blue-secondary);
+    box-shadow: 0 0px 15px black;
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.header .logo {
+    padding: 13px 0;
+    height: 100px;
+}
+
+.header .logo:hover, .header h1:hover {
+    cursor: pointer;
+}
+
+.header h1 {
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0 0 2px black;
+}
+
+.header .home {
+    height: 60px;
+}
