@@ -1,5 +1,4 @@
 # TideWaveBlocker Chromium Extension
----
 
 ## Design considerations
 
